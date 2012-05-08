@@ -2,9 +2,13 @@ RailsWheneverGemDemo
 ====================
 
 git clone git://github.com/dzoba/RailsWheneverGemDemo.git
+
 cd RailsWheneverGemDemo
+
 bundle install
+
 whenever -i
+
 rails s
 
 
