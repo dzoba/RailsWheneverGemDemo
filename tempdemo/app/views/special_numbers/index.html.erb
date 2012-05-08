@@ -1,0 +1,23 @@
+<h1>Listing special_numbers</h1>
+
+<table>
+  <tr>
+    <th>Special</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @special_numbers.each do |special_number| %>
+  <tr>
+    <td><%= special_number.special %></td>
+    <td><%= link_to 'Show', special_number %></td>
+    <td><%= link_to 'Edit', edit_special_number_path(special_number) %></td>
+    <td><%= link_to 'Destroy', special_number, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Special number', new_special_number_path %>
